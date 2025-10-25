@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 17th Birthday! 🎉</title>
+    
+    <style>
+        :root {
+            --primary-color: #f67280; 
+            --gradient-start: #ffc0cb;
+            --gradient-end: #ff69b4; /* Hotter pink */
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        /* GAYA UCAPAN */
+        .message-box {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            max-width: 90%;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ==================================== */
+        /* GAYA KUE ULTAH (MENGGUNAKAN GAMBAR) */
+        /* ==================================== */
+        .cake-image {
+            max-width: 100%; /* Memastikan gambar responsif */
+            height: auto;
+            width: 300px; /* Lebar default untuk kue */
+            animation: bounceIn 1s ease-out 0.5s forwards; /* Animasi muncul */
+            opacity: 0; /* Mulai tersembunyi */
+        }
+        
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: scale(0.3); }
+            50% { opacity: 1; transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        /* Responsif */
+        @media (max-width: 400px) {
+            .message-box {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .cake-image {
+                width: 250px; /* Ukuran kue yang lebih kecil untuk layar sempit */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message-box">
+        <h1>Happy 17th Birthday! 🎉</h1>
+        <h2>To Someone Special...</h2>
+        <p>Semoga di usia yang baru ini, kamu semakin bahagia, impianmu tercapai, dan harimu selalu penuh dengan tawa dan cinta.</p>
+        <p>You deserve all the best things in the world! ❤️</p>
+    </div>
+
+    <img src="p.png" alt="Kue Ulang Tahun ke-17" class="cake-image">
+
+</body>
+</html>

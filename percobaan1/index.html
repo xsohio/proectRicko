@@ -207,7 +207,7 @@ footer {
         </div>
 
         <footer>
-            <p>sazxipzclife</p>
+            <p>Peramal cuaca</p>
         </footer>
     </div>
     
@@ -215,9 +215,8 @@ footer {
       // Menunggu sampai semua elemen HTML dimuat
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- PENGATURAN ---
-    // Atur PIN yang benar di sini
-    const CORRECT_PIN = '1234'; 
+   
+    const CORRECT_PIN = '1026'; 
     // --------------------
 
     let enteredPin = ''; // Variabel untuk menyimpan PIN yang diketik user
@@ -257,25 +256,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkPin() {
         if (enteredPin === CORRECT_PIN) {
-            // --- PIN BENAR ---
-            // Tambahkan kelas 'success' untuk animasi pudar
             container.classList.add('success');
-            
-            // Tunggu 0.5 detik sebelum pindah halaman
             setTimeout(() => {
-                // Pindahkan user ke halaman birthday.html
-                window.location.href = 'birthday.html';
+                window.location.href = 'slide.html';
             }, 500);
 
         } else {
-            // --- PIN SALAH ---
-            // Tambahkan kelas 'error' untuk animasi getar
             container.classList.add('error');
             
-            // Tunggu 0.8 detik, lalu reset
+   
             setTimeout(() => {
-                enteredPin = '';      // Kosongkan PIN
-                display.value = '';   // Kosongkan tampilan
+                enteredPin = '';     
+                display.value = '';   
             }, 800);
         }
     }
